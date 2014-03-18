@@ -15,12 +15,14 @@ if [ ! -d $2 ];then
 fi
 if [ "$1" == "-modetoxml" ];then
 	if [ ! -e ModetoXML.class ]; then
-	`javac ModetoXML.java`
+	javac -source 1.6 -target 1.6 ModetoXML.java
 	fi
-	`java ModetoXML "$2" "$3"`
+	java ModetoXML "$2" "$3"
 elif [ "$1" == "-xmltomode" ];then
-	`javac XMLtoMode.java`
-	`java XMLtoMode "$2" "$3"`
+	if [ ! -e XMLtoMode.class ]; then
+	javac -source 1.6 -target 1.6 XMLtoMode.java
+	fi
+	java XMLtoMode "$2" "$3"
 else 
 	echo "Invalid Mode! Please check again"
 	echo "-modetoxml for converting *.modes to xml file"

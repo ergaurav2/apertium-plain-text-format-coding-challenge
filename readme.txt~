@@ -1,0 +1,25 @@
+Introduction:
+
+This is a coding challenge for the project "".
+
+Documents:
+
+It contains:
+
+ModetoXML.java which contains code for converting *.modes to xml file
+XMLtoMode.java which contains code for converting modes.xml to *.modes
+
+
+Requirement : 
+
+Java 1.6 or higher version should be installed in the system.
+
+Usage:
+
+Run the run.sh with the following arguments:
+First argument should be mode
+	-modetoxml for converting *.modes to xml file"
+	-xmltomode for converting modes.xml to *.modes
+Second argument should be <Path of the language pair directory>
+Third argument should be <Path of the output dictionary for modes.xml>
+	e.g. bash run.sh -xmltomode apertium-hin test
