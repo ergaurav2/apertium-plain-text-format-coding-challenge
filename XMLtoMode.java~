@@ -90,7 +90,7 @@ public class XMLtoMode extends DefaultHandler {
 			throws SAXException {
 		if (qName.equals("mode")) {
 			try {
-				//System.out.println("File Created "+modefile.getCanonicalPath());
+				System.out.println("File Created "+modefile.getCanonicalPath());
 				BufferedWriter bw = new BufferedWriter(new FileWriter(modefile));
 				bw.write(sbcommand.toString());
 				bw.close();

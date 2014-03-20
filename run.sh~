@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 if [ $# !=  3 ]; then
 	echo "Error: Invalid Number of Arguments!"
 	echo "First argument should be mode" 

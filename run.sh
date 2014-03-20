@@ -15,7 +15,7 @@ if [ ! -d $2 ];then
 fi
 if [ "$1" == "-modetoxml" ];then
 	if [ ! -e ModetoXML.class ]; then
-	javac -source 1.6 -target 1.6 ModetoXML.java
+	echo javac -source 1.6 -target 1.6 ModetoXML.java
 	fi
 	java ModetoXML "$2" "$3"
 elif [ "$1" == "-xmltomode" ];then

@@ -49,8 +49,8 @@ public class ModetoXML {
 		inputdirpath = inputdirpath + File.separator + "modes";
 		File directory = new File(inputdirpath);
 		try {
-			//System.out.println("Input Directory"+directory.getCanonicalPath());
-			//System.out.println("Output File "+outputfile.getCanonicalPath());
+			System.out.println("Input Directory"+directory.getCanonicalPath());
+			System.out.println("Output File "+outputfile.getCanonicalPath());
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
